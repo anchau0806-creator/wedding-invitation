@@ -4,7 +4,6 @@ export async function generateMetadata({ params, searchParams }, parent) {
   const previousImages = (await parent).openGraph?.images || [];
 
   const name = searchParams.name || "You";
-  console.log(name);
   return {
     title: `Thiệp cưới của Hùng-Thuý | Kính Mời ${name}`,
     openGraph: {

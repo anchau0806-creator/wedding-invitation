@@ -177,7 +177,7 @@ const albumB = [
     imgs: [
       {
         id: 9,
-        img: `${link}/e2`,
+        img: `${link}/e9`,
       },
     ],
   },
@@ -186,7 +186,7 @@ const albumB = [
     imgs: [
       {
         id: 10,
-        img: `${link}/e9`,
+        img: `${link}/e13`,
       },
     ],
   },
@@ -213,7 +213,7 @@ const albumC = [
     imgs: [
       {
         id: 13,
-        img: `${link}/e13`,
+        img: `${link}/e2`,
       },
     ],
   },

@@ -41,6 +41,27 @@
   align-items: center;
 }
 
+.statistic {
+  display: flex;
+  margin-top: 24px;
+  .s-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px;
+  }
+
+  .icon {
+    margin-right: 8px;
+  }
+
+  .number {
+    font-family: StyleScript;
+    font-size: 2rem;
+    line-height: 1;
+  }
+}
+
 .name {
   font-size: 2rem;
   font-family: Text;
@@ -50,7 +71,7 @@
 }
 
 .nodata {
-  color: #fff;
+  color: #333;
   font-size: 1.4rem;
   text-align: center;
 }

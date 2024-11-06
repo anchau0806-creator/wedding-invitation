@@ -15,6 +15,7 @@ import Final from "@/app/component/final";
 import Game from "@/app/component/game";
 import { MultiContext } from "@/app/context";
 import Disk from "@/app/component/disk";
+import Timer from "@/app/component/timer";
 
 const cx = classNames.bind(styles);
 export default function Home() {
@@ -62,6 +63,7 @@ export default function Home() {
           <Album name={name}></Album>
           <GuestBook fName={name} />
           <Game />
+          <Timer />
           <Final />
           <Footer />
         </>

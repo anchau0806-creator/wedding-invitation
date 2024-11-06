@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./wish.module.scss";
 import Link from "next/link";
+import Love from "@/app/icons/love";
+import Sad from "@/app/icons/sad";
+import Angry from "@/app/icons/angry";
 // import { api } from "../wedding";
 const cx = classNames.bind(styles);
 
@@ -13,7 +16,6 @@ function Wish({}) {
 
   const name = searchParams.get("name") || "You";
 
-  console.log(wishes);
   useEffect(() => {
     function compareByDate(a, b) {
       return b.createdAt - a.createdAt;
@@ -33,6 +35,35 @@ function Wish({}) {
   return (
     <div className={cx("wrapper")}>
       <h2 className={cx("title")}>ALL WISHES FOR YOUU</h2>
+
+      <div className={cx("statistic")}>
+        <div className={cx("s-wrap")}>
+          <Love className={cx("icon")} />
+          <span className={cx("number")}>
+            {wishes.length > 0
+              ? wishes.filter((w) => w.isAttend === "yes").length
+              : 0}
+          </span>
+        </div>
+        <div className={cx("s-wrap")}>
+          <Sad className={cx("icon")} />
+          <span className={cx("number")}>
+            {" "}
+            {wishes.length > 0
+              ? wishes.filter((w) => w.isAttend === "no").length
+              : 0}
+          </span>
+        </div>
+        <div className={cx("s-wrap")}>
+          <Angry className={cx("icon")} />
+          <span className={cx("number")}>
+            {" "}
+            {wishes.length > 0
+              ? wishes.filter((w) => w.isAttend === "or").length
+              : 0}
+          </span>
+        </div>
+      </div>
       <div className={cx("container")}>
         {wishes.length > 0 ? (
           wishes.map((w, index) => {
