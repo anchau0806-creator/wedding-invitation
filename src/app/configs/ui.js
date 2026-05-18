@@ -25,14 +25,14 @@ const configConfetti = {
 const weddingInfo = [
   {
     time: {
-      date: "22/12",
-      year: "2024",
-      time: "11:00",
-      full: "Chủ nhật, Ngày 22 Tháng 12 năm 2024",
+      date: "04/06",
+      year: "2026",
+      time: "11:30",
+      full: "Thứ năm, Ngày 04 Tháng 06 năm 2026",
     },
-    address: "Tổ 23A , xã tân lập , huyện đồng phú , tỉnh bình phước",
-    street: "Tổ 23A , xã tân lập , huyện đồng phú , tỉnh bình phước",
-    phone: "0375 889 827",
+    address: "Số 126 - 134, Nguyễn Công Phương , tỉnh Quảng Ngãi",
+    street: "Số 126 - 134, Nguyễn Công Phương , tỉnh Quảng Ngãi",
+    phone: "0963855491",
     posision: "bottom left",
   },
 ];
@@ -85,13 +85,13 @@ const profileSection = {
   profiles: [
     {
       title: "bride",
-      name: "Trần Thị Thúy",
+      name: "Lâm Khánh Hạ",
       avatar: `${cdnLink}/bride6`,
       images: [`${cdnLink}/bride4`, `${cdnLink}/bride7`],
     },
     {
       title: "groom",
-      name: "Lang Mạnh Hùng",
+      name: "Vương Đình Tú",
       avatar: `${cdnLink}/groom2`,
       images: [`${cdnLink}/groom3`, `${cdnLink}/groom1`],
     },
@@ -122,7 +122,7 @@ const albumSection = {
 
 const guestbookSection = {
   image: `${cdnLink}/e5`,
-  time: "12/12/2024",
+  time: "04/06/2026",
 };
 
 // gift section
@@ -147,9 +147,9 @@ const giftSection = {
 // timer
 const timerSection = {
   weddingTime: {
-    year: 2024,
-    day: 22,
-    month: 12,
+    year: 2026,
+    day: 04,
+    month: 06,
   },
 };
 
@@ -302,13 +302,13 @@ const albums = [...albumA, ...albumB, ...albumC]; // for preview
 
 const metaData = {
   main: {
-    title: "Báo Hỉ Hùng - Thúy | Kính Mời",
+    title: "Lễ Thành Hôn Tú - Hạ | Kính Mời",
     graphImage:
       "https://res.cloudinary.com/do6sozxbo/image/upload/v1730558395/wedding5/land.jpg",
   },
 
   wish: {
-    title: "Tất cả lời chúc dành cho Hùng - Thúy",
+    title: "Tất cả lời chúc dành cho Tú - Hạ",
     graphImage:
       "https://res.cloudinary.com/do6sozxbo/image/upload/v1730558395/wedding5/am11.jpg",
   },
